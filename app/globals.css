@@ -674,3 +674,75 @@ h3 {
   background: #fbe9ea;
   color: #8c1d25;
 }
+
+/* Página de links (/links) */
+.links-page {
+  min-height: 100vh;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 56px 20px 40px;
+}
+.links-card {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.links-avatar {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--amber);
+}
+.links-card h1 {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.01em;
+  margin-top: 8px;
+}
+.links-sub {
+  margin: 0;
+  color: var(--on-dark);
+  font-size: 16px;
+}
+.links-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 24px;
+}
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 56px;
+  padding: 0 22px;
+  border-radius: 16px;
+  background: var(--panel);
+  border: 1px solid var(--panel-line);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: left;
+}
+.link-btn:hover {
+  opacity: 1;
+  border-color: var(--amber);
+}
+.link-btn.highlight {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+.links-foot {
+  margin: 40px 0 0;
+  font-size: 13px;
+  color: #8fa6b4;
+}

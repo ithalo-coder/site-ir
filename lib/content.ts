@@ -121,4 +121,17 @@ export const content = {
       "Outro assunto",
     ],
   },
+  // Página /links. Troque os href "#" pelos endereços reais; a ordem aqui é a ordem na página.
+  links: {
+    subtitle: "Mentalidade, disciplina e investimentos",
+    items: [
+      { label: "Falar no WhatsApp", href: "#", highlight: true },
+      { label: "Instagram", href: "#" },
+      { label: "YouTube", href: "#" },
+      { label: "LinkedIn", href: "#" },
+      { label: "TikTok", href: "#" },
+      { label: "Quero aplicar para mentoria ou palestra", href: "/aplicacao" },
+      { label: "Conhecer o site completo", href: "/" },
+    ],
+  },
 };
