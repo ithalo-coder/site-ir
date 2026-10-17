@@ -99,6 +99,7 @@ export const content = {
     social: [
       { label: "Instagram", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
       { label: "YouTube", href: "https://www.youtube.com/@ithalomarcosmarcalribeiro" },
+      { label: "TikTok", href: "https://www.tiktok.com/@ithalomribeiro" },
       { label: "WhatsApp", href: "https://wa.me/5562981535607" },
     ],
   },
@@ -129,7 +130,8 @@ export const content = {
       { label: "Instagram @ithaloribeiro.oficial", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
       { label: "Instagram @ithalomr", href: "https://www.instagram.com/ithalomr/" },
       { label: "YouTube", href: "https://www.youtube.com/@ithalomarcosmarcalribeiro" },
-      { label: "Quero aplicar para mentoria ou palestra", href: "/aplicacao" },
+      { label: "TikTok", href: "https://www.tiktok.com/@ithalomribeiro" },
+      { label: "Quero aplicar para mentoria ou palestra", href: "/cadastro" },
       { label: "Conhecer o site completo", href: "/" },
     ],
   },

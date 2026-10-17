@@ -21,7 +21,7 @@ export default function SiteHeader({ minimal = false }: { minimal?: boolean }) {
                 </Link>
               ))}
             </nav>
-            <Link href="/aplicacao" className="btn btn-primary btn-sm">
+            <Link href="/cadastro" className="btn btn-primary btn-sm">
               Aplicar agora
             </Link>
           </>

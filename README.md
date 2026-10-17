@@ -5,7 +5,8 @@ Site institucional em Next.js (App Router) com formulário de aplicação gravan
 ## Estrutura
 
 - `app/page.tsx`: Home
-- `app/aplicacao/`: página e formulário de aplicação
+- `app/cadastro/`: página e formulário de aplicação (`/cadastro`). Aceita `?interesse=palestra`, `mentoria` ou `cafe` para abrir com a opção marcada
+- `app/links/`: página de links para a bio das redes sociais (`/links`)
 - `app/api/applications/route.ts`: rota que valida e grava no Supabase
 - `lib/content.ts`: **todos os textos do site**. Troque os `[PLACEHOLDERS]` aqui
 - `app/globals.css`: estilos e paleta (variáveis no topo)

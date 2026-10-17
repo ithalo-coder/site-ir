@@ -27,7 +27,7 @@ export default function Home() {
               <h1>{c.hero.title}</h1>
               <p>{c.hero.text}</p>
               <div className="hero-actions">
-                <Link href="/aplicacao" className="btn btn-primary">
+                <Link href="/cadastro" className="btn btn-primary">
                   {c.hero.primaryCta}
                 </Link>
                 <a href="#sobre" className="btn btn-ghost">
@@ -96,7 +96,7 @@ export default function Home() {
                   <div className="card-num">{String(i + 1).padStart(2, "0")}</div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
-                  <Link href="/aplicacao" className="card-link">
+                  <Link href={`/cadastro?interesse=${["palestra", "mentoria", "cafe"][i] ?? ""}`} className="card-link">
                     Saber mais →
                   </Link>
                 </div>
@@ -168,7 +168,7 @@ export default function Home() {
               <h2>{c.cta.title}</h2>
               <p>{c.cta.text}</p>
             </div>
-            <Link href="/aplicacao" className="btn btn-primary">
+            <Link href="/cadastro" className="btn btn-primary">
               {c.cta.button}
             </Link>
           </div>

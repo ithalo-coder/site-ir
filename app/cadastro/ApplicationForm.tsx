@@ -5,7 +5,13 @@ import type { FormEvent } from "react";
 
 type Status = "idle" | "sending" | "ok" | "error";
 
-export default function ApplicationForm({ interests }: { interests: string[] }) {
+export default function ApplicationForm({
+  interests,
+  defaultInterest,
+}: {
+  interests: string[];
+  defaultInterest?: string;
+}) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
 
@@ -83,7 +89,7 @@ export default function ApplicationForm({ interests }: { interests: string[] }) 
 
       <div className="field">
         <label htmlFor="interest">Tipo de interesse</label>
-        <select id="interest" name="interest" defaultValue="">
+        <select id="interest" name="interest" defaultValue={defaultInterest ?? ""}>
           <option value="" disabled>
             Selecione uma opção
           </option>
