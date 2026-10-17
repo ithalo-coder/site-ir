@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
@@ -35,7 +36,14 @@ export default function Home() {
               </div>
             </div>
             <div className="hero-photo">
-              <div className="ph">{c.hero.photoLabel}</div>
+              <Image
+                src="/images/italo-hero.webp"
+                alt="Ítalo Ribeiro durante uma palestra, com o microfone na mão e o dedo na têmpora"
+                width={1024}
+                height={1280}
+                priority
+                sizes="(max-width: 900px) 100vw, 480px"
+              />
             </div>
           </div>
         </section>
