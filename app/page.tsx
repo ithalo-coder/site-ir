@@ -38,7 +38,7 @@ export default function Home() {
             <div className="hero-photo">
               <Image
                 src="/images/italo-hero.webp"
-                alt="Ítalo Ribeiro durante uma palestra, com o microfone na mão e o dedo na têmpora"
+                alt="Ithalo Ribeiro durante uma palestra, com o microfone na mão e o dedo na têmpora"
                 width={1024}
                 height={1280}
                 priority

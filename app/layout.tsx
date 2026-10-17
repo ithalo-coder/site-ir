@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ítalo Ribeiro · Mentalidade, disciplina e investimentos",
+  title: "Ithalo Ribeiro · Mentalidade, disciplina e investimentos",
   description:
-    "Palestras, mentorias e o Café de Negócios para Empresários, com Ítalo Ribeiro. Mentalidade visionária, disciplina e investimento.",
+    "Palestras, mentorias e o Café de Negócios para Empresários, com Ithalo Ribeiro. Mentalidade visionária, disciplina e investimento.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
