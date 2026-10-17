@@ -1,7 +1,7 @@
 // Todo o texto do site fica aqui. Itens entre [COLCHETES] ainda precisam de conteúdo real.
 
 export const content = {
-  brand: "Ithalo Ribeiro",
+  brand: "Ithalo Marçal",
   nav: [
     { label: "Sobre", href: "/#sobre" },
     { label: "Palestras", href: "/#palestras" },
