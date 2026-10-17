@@ -100,14 +100,9 @@ export default function Home() {
         {/* Livros */}
         <section id="livros" className="section section-bg">
           <div className="container">
-            <div className="section-row">
-              <div className="section-head">
-                <div className="eyebrow">{c.books.eyebrow}</div>
-                <h2>{c.books.title}</h2>
-              </div>
-              <a href="#livros" className="card-link">
-                Ver todos →
-              </a>
+            <div className="section-head">
+              <div className="eyebrow">{c.books.eyebrow}</div>
+              <h2>{c.books.title}</h2>
             </div>
             <div className="books">
               {c.books.items.map((item, i) => (

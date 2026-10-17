@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "[SUA MARCA]",
-  description: "[Descrição do site em até 160 caracteres, para os resultados de busca.]",
+  title: "Ítalo Ribeiro · Mentalidade, disciplina e investimentos",
+  description:
+    "Palestras, mentorias e o Café de Negócios para Empresários, com Ítalo Ribeiro. Mentalidade visionária, disciplina e investimento.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

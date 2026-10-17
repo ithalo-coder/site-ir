@@ -1,68 +1,69 @@
-// Todo o texto do site fica aqui. Troque os [PLACEHOLDERS] pelo conteúdo real.
+// Todo o texto do site fica aqui. Itens entre [COLCHETES] ainda precisam de conteúdo real.
 
 export const content = {
-  brand: "[SUA MARCA]",
+  brand: "Ítalo Ribeiro",
   nav: [
     { label: "Sobre", href: "/#sobre" },
     { label: "Palestras", href: "/#palestras" },
-    { label: "Livros", href: "/#livros" },
+    { label: "Leituras", href: "/#livros" },
     { label: "Vídeos", href: "/#videos" },
     { label: "Depoimentos", href: "/#depoimentos" },
   ],
   hero: {
-    eyebrow: "[ÁREA DE ATUAÇÃO EM MAIÚSCULAS]",
-    title: "[Sua promessa principal em uma frase direta para o seu público]",
-    text: "[Complemento em duas linhas: para quem é, o que a pessoa conquista e por que confiar em você.]",
+    eyebrow: "MENTALIDADE · DISCIPLINA · INVESTIMENTOS",
+    title: "O momento que você vive não define aonde você vai chegar",
+    text: "Mentalidade visionária, disciplina e investimento para quem quer prosperar, criar várias fontes de renda e viver o extraordinário.",
     primaryCta: "Quero aplicar",
     secondaryCta: "Conhecer a história",
     photoLabel: "[FOTO PRINCIPAL · RETRATO 4:5]",
   },
   stats: [
-    { value: "[00+]", label: "[anos de experiência]" },
-    { value: "[00 mil]", label: "[pessoas impactadas]" },
-    { value: "[00]", label: "[palestras realizadas]" },
-    { value: "[00]", label: "[livros ou programas]" },
+    { value: "14 anos", label: "quando comecei a trabalhar" },
+    { value: "3 rendas", label: "já aos 15 anos de idade" },
+    { value: "8 anos", label: "na polícia, de 2014 a 2022" },
+    { value: "6", label: "empresas fundadas ou em sociedade" },
   ],
   about: {
     eyebrow: "SOBRE",
-    title: "[Título curto sobre quem você é e o que defende]",
+    title: "Comecei aos 14 anos passeando com o cachorro dos vizinhos",
     photoLabel: "[FOTO SECUNDÁRIA · 1:1]",
     paragraphs: [
-      "[Parágrafo 1: sua trajetória, formação e o motivo de ter começado esse trabalho.]",
-      "[Parágrafo 2: o que te diferencia e o resultado que seus clientes ou alunos costumam alcançar.]",
+      "Sou de Goiânia e perdi meu pai aos 4 anos de idade. Fui criado pelos meus avós e, na infância, usava roupas dos meus primos. Foi uma fase difícil, mas, graças a Deus, nunca faltou nada. Isso me motivou a trabalhar e a entender que ninguém ia me dar nada.",
+      "Comecei a trabalhar aos 14 anos, passeando com o cachorro dos vizinhos por 30 reais por semana. Aos 15, já tinha três fontes de renda: o programa de jovem aprendiz do Pró-Cerrado, o passeio com os cães e a venda de celulares de dois chips, chips e pen drives. Fui juntando dinheiro, comecei a comprar lotes e paguei minha faculdade de Direito. Enquanto meus amigos curtiam a vida, eu abria mão dos prazeres imediatos. Cheguei a ganhar o apelido de Tio Patinhas.",
+      "Ao longo dos anos, atuei como advogado, servidor público na polícia (de 2014 a 2022) e empresário: bar e restaurante, loja de biquínis, construtora e imobiliária, palestras e mentorias. Hoje invisto em energia solar, galpões para aluguel e venda e outdoors. Minha missão é plantar coisas boas nas pessoas e fazê-las acreditar que podem mudar a própria vida.",
     ],
     credentials: [
-      "[Formação ou certificação 1]",
-      "[Reconhecimento ou prêmio 2]",
-      "[Empresas ou veículos onde atuou 3]",
+      "Graduado e pós-graduado em Direito",
+      "Cursos de oratória, gestão financeira e Método CIS",
+      "Oito anos na polícia, de 2014 a 2022",
+      "Fundador da IR Construtora e Imobiliária, da IR Palestras e Mentorias e do bar e restaurante Caribs",
     ],
   },
   services: {
-    eyebrow: "PALESTRAS E PROGRAMAS",
-    title: "[Formatos adequados ao perfil de cada público]",
+    eyebrow: "PALESTRAS, MENTORIAS E EVENTOS",
+    title: "Formas de caminhar comigo",
     items: [
       {
-        title: "[Nome da palestra ou programa]",
-        text: "[Descrição em duas linhas: público ideal, duração e o que muda depois.]",
+        title: "Palestras",
+        text: "Mentalidade visionária, disciplina, constância e como começar com pouco, poupando e investindo. Para empresas e eventos.",
       },
       {
-        title: "[Nome da palestra ou programa]",
-        text: "[Descrição em duas linhas: público ideal, duração e o que muda depois.]",
+        title: "Mentorias",
+        text: "Acompanhamento sobre disciplina, controle de gastos, gestão do tempo, investimento e criação de várias fontes de renda.",
       },
       {
-        title: "[Nome da palestra ou programa]",
-        text: "[Descrição em duas linhas: público ideal, duração e o que muda depois.]",
+        title: "Café de Negócios para Empresários",
+        text: "Evento exclusivo, aberto apenas a empresários convidados, para trocar experiências e fazer conexões.",
       },
     ],
   },
   books: {
-    eyebrow: "LIVROS E MATERIAIS",
-    title: "[Conheça as obras]",
+    eyebrow: "LEITURAS",
+    title: "Livros que mudaram minha forma de pensar",
     items: [
-      { title: "[Título do livro]" },
-      { title: "[Título do livro]" },
-      { title: "[Título do livro]" },
-      { title: "[Título do livro]" },
+      { title: "O Homem Mais Rico da Babilônia" },
+      { title: "Pai Rico, Pai Pobre" },
+      { title: "Psicologia Financeira" },
     ],
   },
   videos: {
@@ -76,25 +77,25 @@ export const content = {
   },
   testimonials: {
     eyebrow: "DEPOIMENTOS",
-    title: "[Quem já participou]",
+    title: "Quem caminhou comigo",
     items: [
       {
-        quote: "[Depoimento real de cliente. Peça autorização antes de publicar.]",
+        quote: "[Depoimento real de uma pessoa que fez mentoria. Peça autorização antes de publicar.]",
         author: "[Nome, cargo, empresa]",
       },
       {
-        quote: "[Depoimento real de cliente. Peça autorização antes de publicar.]",
+        quote: "[Depoimento real de um sócio ou parceiro. Peça autorização antes de publicar.]",
         author: "[Nome, cargo, empresa]",
       },
     ],
   },
   cta: {
-    title: "[Pronto para dar o próximo passo?]",
-    text: "[Conte um pouco sobre você ou sua empresa. Respondemos em até [X] dias úteis.]",
+    title: "Pronto para mudar a sua mentalidade e os seus resultados?",
+    text: "Conte um pouco sobre você ou sua empresa. Respondemos em até [X] dias úteis.",
     button: "Preencher aplicação",
   },
   footer: {
-    tagline: "[Frase curta de posicionamento.]",
+    tagline: "Mentalidade visionária, disciplina e investimento.",
     social: [
       { label: "Instagram", href: "#" },
       { label: "YouTube", href: "#" },
@@ -103,20 +104,21 @@ export const content = {
   },
   application: {
     eyebrow: "APLICAÇÃO",
-    title: "[Título da aplicação: o que a pessoa está pedindo]",
-    text: "[Explique em duas linhas quem pode aplicar e o que acontece depois do envio.]",
+    title: "Vamos conversar sobre a sua próxima etapa",
+    text: "Preencha o formulário e conte o que você precisa: palestra, mentoria ou o Café de Negócios para Empresários. Retornamos pelo contato que você informar.",
     steps: [
-      { title: "Você envia a aplicação", text: "[Leva cerca de [X] minutos.]" },
-      { title: "Nossa equipe analisa", text: "[Retorno em até [X] dias úteis.]" },
+      { title: "Você envia a aplicação", text: "Leva cerca de [X] minutos." },
+      { title: "Nossa equipe analisa", text: "Retorno em até [X] dias úteis." },
       {
         title: "Conversamos sobre o próximo passo",
-        text: "[Por e-mail, WhatsApp ou videochamada.]",
+        text: "Por e-mail, WhatsApp ou videochamada.",
       },
     ],
     interests: [
-      "[Contratar uma palestra]",
-      "[Participar de um programa]",
-      "[Outro assunto]",
+      "Contratar uma palestra",
+      "Participar de uma mentoria",
+      "Café de Negócios para Empresários",
+      "Outro assunto",
     ],
   },
 };
