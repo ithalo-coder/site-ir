@@ -98,6 +98,7 @@ export const content = {
     tagline: "Mentalidade visionária, disciplina e investimento.",
     social: [
       { label: "Instagram", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
+      { label: "YouTube", href: "https://www.youtube.com/@ithalomarcosmarcalribeiro" },
       { label: "WhatsApp", href: "https://wa.me/5562981535607" },
     ],
   },
@@ -127,6 +128,7 @@ export const content = {
       { label: "Falar no WhatsApp", href: "https://wa.me/5562981535607", highlight: true },
       { label: "Instagram @ithaloribeiro.oficial", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
       { label: "Instagram @ithalomr", href: "https://www.instagram.com/ithalomr/" },
+      { label: "YouTube", href: "https://www.youtube.com/@ithalomarcosmarcalribeiro" },
       { label: "Quero aplicar para mentoria ou palestra", href: "/aplicacao" },
       { label: "Conhecer o site completo", href: "/" },
     ],
