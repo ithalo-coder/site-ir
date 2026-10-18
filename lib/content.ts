@@ -191,8 +191,8 @@ export const content = {
       title: "Detalhes da mentoria",
       items: [
         { label: "Duração", value: "3 meses" },
-        { label: "Mês 1", value: "Encontros semanais de 1h30, presenciais ou online" },
-        { label: "Meses 2 e 3", value: "Encontros quinzenais de 1h30, online pelo Google Meet" },
+        { label: "Mês 1", value: "Encontros semanais de 1h30, presenciais ou online, à escolha do mentorado" },
+        { label: "Meses 2 e 3", value: "Encontros quinzenais de 1h30, online pelo Google Meet, podendo ser presenciais se o mentor achar necessário" },
         { label: "Acompanhamento", value: "Grupo com o mentor durante toda a mentoria" },
         { label: "Bônus", value: "Aulas e encontros extras, não programados, ao longo da mentoria" },
         { label: "Investimento", value: "R$ 4.490, em até 6 vezes" },
