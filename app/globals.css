@@ -746,3 +746,333 @@ h3 {
   font-size: 13px;
   color: #8fa6b4;
 }
+
+/* ============================================================
+   Mobile (tablet pequeno e celular)
+   ============================================================ */
+@media (max-width: 900px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Cabeçalho: logo + botão na primeira linha, menu rolável embaixo */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .site-header .container {
+    padding-top: 12px;
+    padding-bottom: 0;
+    gap: 0 12px;
+    flex-wrap: wrap;
+  }
+  .logo {
+    font-size: 19px;
+    order: 1;
+  }
+  .site-header .btn-sm {
+    order: 2;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+  .nav {
+    order: 3;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    gap: 4px;
+    margin: 8px -20px 0;
+    padding: 0 12px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    border-top: 1px solid var(--panel-line);
+  }
+  .nav::-webkit-scrollbar {
+    display: none;
+  }
+  .nav a {
+    flex: none;
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  /* Cabeçalho mínimo (/cadastro): sem menu, uma linha só */
+  .site-header .container:not(:has(.nav)) {
+    padding-bottom: 12px;
+    flex-wrap: nowrap;
+  }
+
+  /* Âncoras não ficam escondidas atrás do cabeçalho fixo */
+  section[id] {
+    scroll-margin-top: 110px;
+  }
+
+  /* Hero */
+  .hero .container {
+    padding-top: 36px;
+    padding-bottom: 48px;
+    gap: 32px;
+  }
+  .hero-text {
+    flex-basis: 100%;
+    gap: 18px;
+  }
+  .hero p {
+    font-size: 17px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 4px;
+  }
+  .hero-actions .btn {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-photo {
+    flex-basis: 100%;
+  }
+  .hero-photo img {
+    max-width: 420px;
+    border-radius: 20px;
+  }
+
+  /* Botões com área de toque confortável */
+  .btn {
+    padding: 15px 26px;
+  }
+  .btn-ghost {
+    padding: 13.5px 24px;
+  }
+
+  /* Números em grade 2x2 */
+  .stats .container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 16px;
+  }
+  .stat {
+    flex: none;
+  }
+  .stat-value {
+    font-size: 30px;
+  }
+  .stat-label {
+    font-size: 14px;
+  }
+
+  /* Seções */
+  .section {
+    padding: 56px 0;
+  }
+  .section-head {
+    margin-bottom: 28px;
+    gap: 10px;
+  }
+  .section-row {
+    margin-bottom: 28px;
+  }
+
+  /* Sobre */
+  .about {
+    gap: 28px;
+  }
+  .about-photo,
+  .about-text {
+    flex-basis: 100%;
+  }
+  .about-photo .ph {
+    height: 280px;
+    border-radius: 20px;
+  }
+  .about-text {
+    gap: 16px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+
+  /* Cards */
+  .cards,
+  .videos,
+  .quotes {
+    gap: 16px;
+  }
+  .card,
+  .video,
+  .quote {
+    flex-basis: 100%;
+  }
+  .card {
+    padding: 24px;
+    border-radius: 16px;
+    gap: 12px;
+  }
+  .card h3 {
+    font-size: 20px;
+  }
+  .card-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .quote {
+    padding: 24px;
+    border-radius: 16px;
+    gap: 16px;
+  }
+  .quote blockquote {
+    font-size: 17px;
+  }
+
+  /* Livros em duas colunas */
+  .books {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 14px;
+  }
+  .book {
+    flex: none;
+    gap: 10px;
+  }
+  .book .ph {
+    height: auto;
+    aspect-ratio: 3 / 4;
+    padding: 12px;
+  }
+  .item-title {
+    font-size: 15px;
+  }
+
+  /* Vídeos */
+  .video-thumb {
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+  }
+
+  /* CTA final */
+  .cta .container {
+    padding-top: 56px;
+    padding-bottom: 56px;
+    gap: 24px;
+  }
+  .cta-text {
+    flex-basis: 100%;
+  }
+  .cta p {
+    font-size: 16px;
+  }
+  .cta .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 16px 24px;
+  }
+
+  /* Rodapé: navegação e redes lado a lado */
+  .site-footer .container {
+    padding-top: 40px;
+    padding-bottom: 28px;
+    gap: 28px;
+  }
+  .footer-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 16px;
+  }
+  .footer-col.wide {
+    grid-column: 1 / -1;
+  }
+  .footer-col {
+    gap: 0;
+  }
+  .footer-col strong {
+    margin-bottom: 4px;
+  }
+  .footer-col a {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .footer-bottom a {
+    display: flex;
+    align-items: center;
+    min-height: 40px;
+  }
+
+  /* Cadastro */
+  .app-main {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    gap: 32px;
+  }
+  .app-intro,
+  .form-card {
+    flex-basis: 100%;
+  }
+  .app-intro {
+    gap: 20px;
+  }
+  .app-intro > p {
+    font-size: 16px;
+  }
+  .form-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+    gap: 18px;
+  }
+  .field {
+    flex-basis: 100%;
+  }
+  .field-row {
+    gap: 18px;
+  }
+  .field input,
+  .field select {
+    height: 52px;
+  }
+  .consent {
+    font-size: 14px;
+    gap: 14px;
+  }
+  .consent input {
+    width: 26px;
+    height: 26px;
+    margin: 0;
+  }
+  .submit {
+    width: 100%;
+    height: 56px;
+  }
+
+  /* Links da bio */
+  .links-page {
+    padding: 40px 16px 32px;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+  .stat-value {
+    font-size: 26px;
+  }
+}
+
+/* Respeita quem reduz animações */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
