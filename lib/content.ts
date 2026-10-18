@@ -5,6 +5,7 @@ export const content = {
   nav: [
     { label: "Sobre", href: "/#sobre" },
     { label: "Serviços", href: "/#palestras" },
+    { label: "Mentoria", href: "/mentoria" },
     { label: "Leituras", href: "/#livros" },
     { label: "Vídeos", href: "/#videos" },
     { label: "Depoimentos", href: "/#depoimentos" },
@@ -132,6 +133,7 @@ export const content = {
     subtitle: "Mentalidade, disciplina e investimentos",
     items: [
       { label: "Quero participar de mentoria ou palestra", href: "/cadastro", highlight: true },
+      { label: "Conhecer a mentoria", href: "/mentoria" },
       { label: "Conhecer o site completo", href: "/" },
       { label: "Instagram @ithaloribeiro.oficial", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
       { label: "Instagram @ithalomr", href: "https://www.instagram.com/ithalomr/" },
@@ -139,5 +141,75 @@ export const content = {
       { label: "TikTok", href: "https://www.tiktok.com/@ithalomribeiro" },
       { label: "Falar no WhatsApp", href: "https://wa.me/5562981535607" },
     ],
+  },
+  // Página /mentoria (proposta de mentoria). Itens entre [COLCHETES] precisam da sua informação real.
+  mentoria: {
+    eyebrow: "MENTORIA",
+    title: "Disciplina, bons hábitos e dinheiro trabalhando a seu favor",
+    text: "Uma mentoria para quem quer sair da intenção e entrar na rotina: criar bons hábitos, começar e terminar o que planeja, poupar, organizar o tempo e investir com pouco. Para, no médio e no longo prazo, desfrutar de mais liberdade financeira.",
+    primaryCta: "Quero aplicar para a mentoria",
+    secondaryCta: "Ver o que você vai trabalhar",
+    forWhom: {
+      eyebrow: "PARA QUEM É",
+      title: "Esta mentoria é para você se...",
+      items: [
+        "Você começa projetos, mas tem dificuldade em terminar",
+        "O dinheiro entra e some, e você não sabe para onde vai",
+        "Você quer abrir um negócio, mas não sabe por onde começar",
+        "Você quer investir, mas acha que precisa de muito dinheiro",
+        "Você sabe o que precisa fazer, mas não consegue manter a constância",
+      ],
+    },
+    pillars: {
+      eyebrow: "O QUE VOCÊ VAI TRABALHAR",
+      title: "Oito pilares para construir uma base sólida",
+      items: [
+        { title: "Disciplina", text: "Fazer o que precisa ser feito, mesmo nos dias em que a vontade não aparece." },
+        { title: "Bons hábitos", text: "Como criar, manter e substituir hábitos para que a rotina trabalhe por você." },
+        { title: "Começar o negócio", text: "Tirar a ideia do papel, com passos pequenos e claros para dar o primeiro movimento." },
+        { title: "Terminar o que começa", text: "Levar projetos até o fim em vez de acumular tentativas pela metade." },
+        { title: "Constância", text: "Manter o ritmo ao longo do tempo, que é onde a maioria das pessoas desiste." },
+        { title: "Poupar", text: "Controlar os gastos e formar a reserva, começando de onde você está." },
+        { title: "Gestão do tempo", text: "Organizar a agenda e as prioridades para render mais sem viver no limite." },
+        { title: "Investir com pouco", text: "Aprender a investir desde os primeiros valores e fazer o dinheiro crescer com o tempo." },
+      ],
+    },
+    how: {
+      eyebrow: "COMO FUNCIONA",
+      title: "Um caminho acompanhado, do diagnóstico à rotina",
+      steps: [
+        { title: "Aplicação e conversa inicial", text: "Você preenche a aplicação e conversamos para entender o seu momento e o seu objetivo." },
+        { title: "Plano personalizado", text: "Definimos juntos metas e primeiros hábitos, de acordo com a sua realidade." },
+        { title: "Acompanhamento", text: "[Descreva o formato: encontros, frequência, canal de apoio, materiais.]" },
+      ],
+    },
+    format: {
+      eyebrow: "FORMATO E INVESTIMENTO",
+      title: "Detalhes da mentoria",
+      items: [
+        { label: "Duração", value: "[X meses]" },
+        { label: "Encontros", value: "[X por mês, online ou presencial]" },
+        { label: "Suporte entre encontros", value: "[WhatsApp ou outro canal]" },
+        { label: "Investimento", value: "[R$ X ou formas de pagamento]" },
+      ],
+    },
+    outcome: {
+      eyebrow: "ONDE VOCÊ QUER CHEGAR",
+      title: "Liberdade para desfrutar, construída com constância",
+      text: "O foco não é resultado de um dia para o outro. É montar uma base de hábitos, organização e investimento que sustente você no médio e no longo prazo, para ter mais tranquilidade e liberdade financeira para viver o que importa.",
+    },
+    mentor: {
+      eyebrow: "QUEM CONDUZ",
+      title: "Quem já começou do zero",
+      text: "Comecei a trabalhar aos 14 anos, passeando com o cachorro dos vizinhos por 30 reais por semana. Aos 15, já tinha três fontes de renda. Fui criado pelos meus avós, abri mão de prazeres imediatos e fui construindo, passo a passo, o que tenho hoje. A mentoria é o que eu gostaria de ter tido: alguém mostrando o caminho com disciplina e constância.",
+      link: "Conhecer a minha história",
+    },
+    disclaimer:
+      "A mentoria trabalha disciplina, hábitos e educação financeira. Não garante resultados financeiros e não é recomendação de investimento.",
+    cta: {
+      title: "Pronto para dar o primeiro passo?",
+      text: "Preencha a aplicação e conte o seu momento. Retornamos pelo contato que você informar.",
+      button: "Quero aplicar para a mentoria",
+    },
   },
 };

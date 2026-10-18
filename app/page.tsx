@@ -119,7 +119,10 @@ export default function Home() {
                   <div className="card-num">{String(i + 1).padStart(2, "0")}</div>
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
-                  <Link href={`/cadastro?interesse=${["palestra", "mentoria", "cafe"][i] ?? ""}`} className="card-link">
+                  <Link
+                    href={i === 1 ? "/mentoria" : `/cadastro?interesse=${["palestra", "mentoria", "cafe"][i] ?? ""}`}
+                    className="card-link"
+                  >
                     {item.cta}
                   </Link>
                 </div>
