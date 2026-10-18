@@ -182,7 +182,7 @@ export const content = {
         { title: "Plano personalizado", text: "Definimos juntos metas e primeiros hábitos, de acordo com a sua realidade." },
         {
           title: "Encontros e acompanhamento",
-          text: "No primeiro mês, encontros semanais de 1h30. Nos meses seguintes, encontros quinzenais online, e um grupo de acompanhamento com o mentor durante toda a mentoria.",
+          text: "No primeiro mês, encontros semanais de 1h30. Nos meses seguintes, encontros quinzenais online, e um grupo no WhatsApp com o mentor e a equipe durante toda a mentoria. Em algumas sessões, você conta também com consultores convidados.",
         },
       ],
     },
@@ -193,7 +193,8 @@ export const content = {
         { label: "Duração", value: "3 meses" },
         { label: "Mês 1", value: "Encontros semanais de 1h30, presenciais ou online, à escolha do mentorado" },
         { label: "Meses 2 e 3", value: "Encontros quinzenais de 1h30, online pelo Google Meet, podendo ser presenciais se o mentor achar necessário" },
-        { label: "Acompanhamento", value: "Grupo com o mentor durante toda a mentoria" },
+        { label: "Acompanhamento", value: "Grupo no WhatsApp com o mentor durante toda a mentoria, com o suporte da equipe de Ithalo Marçal" },
+        { label: "Convidados", value: "Em algumas sessões, participação de consultores de investimentos e de consultor empresarial" },
         { label: "Bônus", value: "Aulas e encontros extras, não programados, ao longo da mentoria" },
         { label: "Investimento", value: "R$ 4.490, em até 6 vezes" },
       ],
