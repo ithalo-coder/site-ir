@@ -1,9 +1,22 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import type { FormEvent } from "react";
 
 type Status = "idle" | "sending" | "ok" | "error";
+
+// Formata enquanto a pessoa digita: (62) 98153-5607 (celular) ou (62) 3153-5607 (fixo).
+function formatPhone(raw: string): string {
+  const digits = raw.replace(/\D/g, "").slice(0, 11);
+  if (digits.length === 0) return "";
+  if (digits.length <= 2) return `(${digits}`;
+  const ddd = digits.slice(0, 2);
+  const rest = digits.slice(2);
+  if (rest.length <= 4) return `(${ddd}) ${rest}`;
+  const split = digits.length === 11 ? 5 : 4;
+  return `(${ddd}) ${rest.slice(0, split)}${rest.length > split ? `-${rest.slice(split)}` : ""}`;
+}
 
 export default function ApplicationForm({
   interests,
@@ -14,6 +27,7 @@ export default function ApplicationForm({
 }) {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
 
   async function onSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -50,12 +64,34 @@ export default function ApplicationForm({
       }
 
       form.reset();
+      setWhatsapp("");
       setStatus("ok");
-      setMessage("Aplicação enviada! Entraremos em contato em breve.");
+      setMessage("");
+      window.scrollTo({ top: 0, behavior: "smooth" });
     } catch {
       setStatus("error");
       setMessage("Sem conexão. Verifique sua internet e tente novamente.");
     }
+  }
+
+  if (status === "ok") {
+    return (
+      <div className="form-card form-done" role="status">
+        <div className="done-icon" aria-hidden="true">
+          ✓
+        </div>
+        <h2>Aplicação enviada!</h2>
+        <p>Recebemos suas informações e entraremos em contato em breve, pelo e-mail ou WhatsApp que você informou.</p>
+        <div className="done-actions">
+          <Link href="/" className="btn btn-primary">
+            Voltar para a home
+          </Link>
+          <button type="button" className="btn btn-outline" onClick={() => setStatus("idle")}>
+            Enviar outra aplicação
+          </button>
+        </div>
+      </div>
+    );
   }
 
   return (
@@ -72,7 +108,17 @@ export default function ApplicationForm({
         </div>
         <div className="field">
           <label htmlFor="whatsapp">WhatsApp</label>
-          <input id="whatsapp" name="whatsapp" type="tel" maxLength={30} placeholder="(00) 00000-0000" autoComplete="tel" />
+          <input
+            id="whatsapp"
+            name="whatsapp"
+            type="tel"
+            inputMode="tel"
+            maxLength={16}
+            placeholder="(00) 00000-0000"
+            autoComplete="tel"
+            value={whatsapp}
+            onChange={(event) => setWhatsapp(formatPhone(event.target.value))}
+          />
         </div>
       </div>
 
@@ -115,7 +161,11 @@ export default function ApplicationForm({
       <div className="consent">
         <input id="consent" name="consent" type="checkbox" required />
         <label htmlFor="consent">
-          Concordo com o uso dos meus dados para contato, conforme a <a href="#">Política de Privacidade</a>.
+          Concordo com o uso dos meus dados para contato, conforme a{" "}
+          <a href="/privacidade" target="_blank" rel="noopener noreferrer">
+            Política de Privacidade
+          </a>
+          .
         </label>
       </div>
 
@@ -124,7 +174,7 @@ export default function ApplicationForm({
       </button>
 
       {message ? (
-        <p className={status === "ok" ? "form-msg ok" : "form-msg err"} role="status">
+        <p className="form-msg err" role="alert">
           {message}
         </p>
       ) : null}

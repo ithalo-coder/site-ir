@@ -6,11 +6,13 @@ import { content as c } from "@/lib/content";
 export const metadata: Metadata = {
   title: `Links · ${c.brand}`,
   description: `Todos os canais de contato e redes sociais de ${c.brand}.`,
+  alternates: { canonical: "/links" },
+  openGraph: { url: "/links" },
 };
 
 export default function LinksPage() {
   return (
-    <main className="links-page">
+    <main id="conteudo" className="links-page">
       <div className="links-card">
         <Image
           className="links-avatar"

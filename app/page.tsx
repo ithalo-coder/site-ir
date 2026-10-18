@@ -1,8 +1,27 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { content as c } from "@/lib/content";
+import { siteUrl } from "@/lib/site";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "/" },
+};
+
+// Dados estruturados (schema.org) para o Google entender quem é a pessoa e onde ela está nas redes.
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: c.brand,
+  url: siteUrl,
+  image: `${siteUrl}/images/italo-hero.webp`,
+  jobTitle: "Palestrante, mentor e empresário",
+  description: "Mentalidade visionária, disciplina e investimento.",
+  sameAs: c.footer.social.filter((s) => !s.href.includes("wa.me")).map((s) => s.href),
+};
 
 function PlayIcon() {
   return (
@@ -16,9 +35,13 @@ function PlayIcon() {
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c") }}
+      />
       <SiteHeader />
 
-      <main>
+      <main id="conteudo">
         {/* Hero */}
         <section className="hero">
           <div className="container">

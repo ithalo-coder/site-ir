@@ -21,7 +21,7 @@ export default function SiteFooter() {
           <div className="footer-col">
             <strong>Redes sociais</strong>
             {content.footer.social.map((item) => (
-              <a key={item.label} href={item.href}>
+              <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer">
                 {item.label}
               </a>
             ))}
@@ -29,7 +29,7 @@ export default function SiteFooter() {
         </div>
         <div className="footer-bottom">
           <div>©{new Date().getFullYear()} {content.brand}. Todos os direitos reservados.</div>
-          <a href="#">Política de Privacidade</a>
+          <Link href="/privacidade">Política de Privacidade</Link>
         </div>
       </div>
     </footer>

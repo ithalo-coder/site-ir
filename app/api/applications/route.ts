@@ -9,7 +9,45 @@ function clean(value: unknown, max: number): string {
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Limite simples por IP: no máximo 5 envios a cada 10 minutos.
+// Fica na memória de cada instância do servidor, então é uma barreira contra spam básico,
+// não um bloqueio absoluto (em ambiente serverless cada instância conta separado).
+const WINDOW_MS = 10 * 60 * 1000;
+const MAX_PER_WINDOW = 5;
+const hits = new Map<string, number[]>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const recent = (hits.get(ip) ?? []).filter((time) => now - time < WINDOW_MS);
+  if (recent.length >= MAX_PER_WINDOW) {
+    hits.set(ip, recent);
+    return true;
+  }
+  recent.push(now);
+  hits.set(ip, recent);
+
+  // Evita crescer sem limite: limpa IPs antigos de vez em quando.
+  if (hits.size > 5000) {
+    for (const [key, times] of hits) {
+      if (times.every((time) => now - time >= WINDOW_MS)) hits.delete(key);
+    }
+  }
+  return false;
+}
+
+function clientIp(request: Request): string {
+  const forwarded = request.headers.get("x-forwarded-for");
+  return forwarded?.split(",")[0]?.trim() || request.headers.get("x-real-ip") || "desconhecido";
+}
+
 export async function POST(request: Request) {
+  if (isRateLimited(clientIp(request))) {
+    return NextResponse.json(
+      { error: "Muitas tentativas em pouco tempo. Aguarde alguns minutos e tente de novo." },
+      { status: 429, headers: { "Retry-After": "600" } },
+    );
+  }
+
   let body: unknown;
   try {
     body = await request.json();

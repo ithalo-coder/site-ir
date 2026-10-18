@@ -25,7 +25,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Manrope", system-ui, sans-serif;
+  font-family: "Manrope Variable", "Manrope", system-ui, sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.55;
@@ -48,7 +48,7 @@ a:hover {
 h1,
 h2,
 h3 {
-  font-family: "Sora", system-ui, sans-serif;
+  font-family: "Sora Variable", "Sora", system-ui, sans-serif;
   margin: 0;
 }
 
@@ -100,7 +100,7 @@ h3 {
   gap: 16px;
 }
 .logo {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora Variable", "Sora", sans-serif;
   font-weight: 700;
   font-size: 22px;
   letter-spacing: -0.01em;
@@ -211,7 +211,7 @@ h3 {
   gap: 4px;
 }
 .stat-value {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora Variable", "Sora", sans-serif;
   font-weight: 700;
   font-size: 40px;
   color: var(--accent);
@@ -312,7 +312,7 @@ h3 {
   gap: 16px;
 }
 .card-num {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora Variable", "Sora", sans-serif;
   font-weight: 700;
   font-size: 15px;
   color: var(--amber);
@@ -369,7 +369,7 @@ h3 {
   border-radius: 12px;
 }
 .item-title {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora Variable", "Sora", sans-serif;
   font-weight: 600;
   font-size: 17px;
 }
@@ -493,7 +493,7 @@ h3 {
   color: #fff;
 }
 .footer-logo {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora Variable", "Sora", sans-serif;
   font-weight: 700;
   font-size: 22px;
   color: #fff;
@@ -555,7 +555,7 @@ h3 {
   border-radius: 12px;
   background: var(--ink);
   color: var(--amber);
-  font-family: "Sora", sans-serif;
+  font-family: "Sora Variable", "Sora", sans-serif;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -747,6 +747,106 @@ h3 {
   color: #8fa6b4;
 }
 
+/* Acessibilidade: link para pular direto ao conteúdo (aparece só ao navegar com teclado) */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -64px;
+  z-index: 100;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background: var(--amber);
+  color: var(--ink);
+  font-weight: 700;
+}
+.skip-link:focus {
+  top: 12px;
+  opacity: 1;
+}
+
+/* Botão de contorno (fundo claro) */
+.btn-outline {
+  background: transparent;
+  color: var(--ink);
+  border: 1.5px solid #bcc8d1;
+  padding: 14.5px 28px;
+  font-weight: 600;
+}
+
+/* Mensagem de envio concluído do formulário */
+.form-done {
+  align-items: flex-start;
+  gap: 16px;
+}
+.form-done h2 {
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -0.015em;
+}
+.form-done p {
+  margin: 0;
+  font-size: 17px;
+  color: var(--body);
+}
+.done-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #e3f4ee;
+  color: var(--accent);
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.done-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+/* Páginas de texto (política de privacidade) */
+.legal {
+  max-width: 760px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.legal h1 {
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 42px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+.legal h2 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 16px;
+}
+.legal p,
+.legal li {
+  font-size: 17px;
+  color: var(--body);
+}
+.legal p {
+  margin: 0;
+}
+.legal ul {
+  margin: 0;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.legal-updated {
+  font-size: 14px !important;
+  color: var(--muted) !important;
+}
+
 /* ============================================================
    Mobile (tablet pequeno e celular)
    ============================================================ */
@@ -782,7 +882,10 @@ h3 {
     flex-wrap: nowrap;
     gap: 4px;
     margin: 8px -20px 0;
-    padding: 0 12px;
+    padding: 0 28px 0 12px;
+    /* esmaece a borda direita para indicar que o menu rola de lado */
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
@@ -1053,6 +1156,27 @@ h3 {
   .submit {
     width: 100%;
     height: 56px;
+  }
+
+  /* Envio concluído e página de privacidade */
+  .form-done {
+    padding: 28px 20px;
+  }
+  .done-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .done-actions .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .legal {
+    padding-top: 36px;
+    padding-bottom: 56px;
+  }
+  .legal p,
+  .legal li {
+    font-size: 16px;
   }
 
   /* Links da bio */

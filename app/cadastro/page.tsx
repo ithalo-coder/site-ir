@@ -6,6 +6,8 @@ import { content as c } from "@/lib/content";
 export const metadata: Metadata = {
   title: `Cadastro · ${c.brand}`,
   description: `Formulário de aplicação para palestras, mentorias e eventos com ${c.brand}.`,
+  alternates: { canonical: "/cadastro" },
+  openGraph: { url: "/cadastro" },
 };
 
 // Permite links como /cadastro?interesse=mentoria, que já abrem com a opção marcada.
@@ -34,7 +36,7 @@ export default async function CadastroPage({
   return (
     <>
       <SiteHeader minimal />
-      <main className="container app-main">
+      <main id="conteudo" className="container app-main">
         <div className="app-intro">
           <div className="eyebrow">{a.eyebrow}</div>
           <h1>{a.title}</h1>
