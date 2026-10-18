@@ -4,7 +4,7 @@ export const content = {
   brand: "Ithalo Marçal",
   nav: [
     { label: "Sobre", href: "/#sobre" },
-    { label: "Palestras", href: "/#palestras" },
+    { label: "Serviços", href: "/#palestras" },
     { label: "Leituras", href: "/#livros" },
     { label: "Vídeos", href: "/#videos" },
     { label: "Depoimentos", href: "/#depoimentos" },
@@ -13,7 +13,7 @@ export const content = {
     eyebrow: "MENTALIDADE · DISCIPLINA · INVESTIMENTOS",
     title: "O momento que você vive não define aonde você vai chegar",
     text: "Mentalidade visionária, disciplina e investimento para quem quer prosperar, criar várias fontes de renda e viver o extraordinário.",
-    primaryCta: "Quero aplicar",
+    primaryCta: "Quero participar",
     secondaryCta: "Conhecer a história",
     photoLabel: "[FOTO PRINCIPAL · RETRATO 4:5]",
   },
@@ -34,7 +34,7 @@ export const content = {
     ],
     credentials: [
       "Graduado e pós-graduado em Direito",
-      "Cursos de oratória, gestão financeira e Método CIS",
+      "Cursos de oratória, gestão financeira e Coaching Integral Sistêmico (Método CIS, da Febracis)",
       "Oito anos na polícia, de 2014 a 2022",
       "Fundador da IR Construtora e Imobiliária, da IR Palestras e Mentorias e do bar e restaurante Caribs",
     ],
@@ -95,7 +95,7 @@ export const content = {
   cta: {
     title: "Pronto para mudar a sua mentalidade e os seus resultados?",
     text: "Conte um pouco sobre você ou sua empresa. Respondemos em até [X] dias úteis.",
-    button: "Preencher aplicação",
+    button: "Preencher candidatura",
   },
   footer: {
     tagline: "Mentalidade visionária, disciplina e investimento.",
@@ -109,11 +109,11 @@ export const content = {
     ],
   },
   application: {
-    eyebrow: "APLICAÇÃO",
+    eyebrow: "CANDIDATURA",
     title: "Vamos conversar sobre a sua próxima etapa",
     text: "Preencha o formulário e conte o que você precisa: palestra, mentoria ou o Café de Negócios para Empresários. Retornamos pelo contato que você informar.",
     steps: [
-      { title: "Você envia a aplicação", text: "Leva cerca de [X] minutos." },
+      { title: "Você envia a candidatura", text: "Leva cerca de [X] minutos." },
       { title: "Nossa equipe analisa", text: "Retorno em até [X] dias úteis." },
       {
         title: "Conversamos sobre o próximo passo",
@@ -131,13 +131,13 @@ export const content = {
   links: {
     subtitle: "Mentalidade, disciplina e investimentos",
     items: [
-      { label: "Falar no WhatsApp", href: "https://wa.me/5562981535607", highlight: true },
+      { label: "Quero participar de mentoria ou palestra", href: "/cadastro", highlight: true },
+      { label: "Conhecer o site completo", href: "/" },
       { label: "Instagram @ithaloribeiro.oficial", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
       { label: "Instagram @ithalomr", href: "https://www.instagram.com/ithalomr/" },
       { label: "YouTube", href: "https://www.youtube.com/@ithalomarcosmarcalribeiro" },
       { label: "TikTok", href: "https://www.tiktok.com/@ithalomribeiro" },
-      { label: "Quero aplicar para mentoria ou palestra", href: "/cadastro" },
-      { label: "Conhecer o site completo", href: "/" },
+      { label: "Falar no WhatsApp", href: "https://wa.me/5562981535607" },
     ],
   },
 };

@@ -32,7 +32,7 @@ export default function PrivacyPage() {
         </p>
 
         <h2>2. Quais dados coletamos</h2>
-        <p>Coletamos apenas o que você preenche no formulário de aplicação (página Cadastro):</p>
+        <p>Coletamos apenas o que você preenche no formulário de candidatura (página Cadastro):</p>
         <ul>
           <li>nome completo e e-mail (obrigatórios);</li>
           <li>WhatsApp, empresa ou organização e cargo (opcionais);</li>
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
 
         <h2>3. Para que usamos os dados</h2>
         <ul>
-          <li>responder à sua aplicação e entrar em contato sobre palestras, mentorias e eventos;</li>
+          <li>responder à sua candidatura e entrar em contato sobre palestras, mentorias e eventos;</li>
           <li>avaliar se o seu pedido se encaixa nos serviços oferecidos;</li>
           <li>cumprir obrigações legais, quando houver.</li>
         </ul>
@@ -90,7 +90,7 @@ export default function PrivacyPage() {
         <h2>8. Segurança</h2>
         <p>
           Adotamos medidas técnicas para proteger os dados: conexão criptografada (HTTPS), acesso restrito ao banco de
-          dados e regras que impedem a leitura pública das aplicações enviadas.
+          dados e regras que impedem a leitura pública das candidaturas enviadas.
         </p>
 
         <h2>9. Mudanças nesta política</h2>

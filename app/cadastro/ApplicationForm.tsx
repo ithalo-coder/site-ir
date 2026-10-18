@@ -80,14 +80,14 @@ export default function ApplicationForm({
         <div className="done-icon" aria-hidden="true">
           ✓
         </div>
-        <h2>Aplicação enviada!</h2>
+        <h2>Candidatura enviada!</h2>
         <p>Recebemos suas informações e entraremos em contato em breve, pelo e-mail ou WhatsApp que você informou.</p>
         <div className="done-actions">
           <Link href="/" className="btn btn-primary">
             Voltar para a home
           </Link>
           <button type="button" className="btn btn-outline" onClick={() => setStatus("idle")}>
-            Enviar outra aplicação
+            Enviar outra candidatura
           </button>
         </div>
       </div>
@@ -170,7 +170,7 @@ export default function ApplicationForm({
       </div>
 
       <button type="submit" className="btn btn-primary submit" disabled={status === "sending"}>
-        {status === "sending" ? "Enviando..." : "Enviar aplicação"}
+        {status === "sending" ? "Enviando..." : "Enviar candidatura"}
       </button>
 
       {message ? (

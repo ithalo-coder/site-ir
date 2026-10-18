@@ -5,7 +5,7 @@ import { content as c } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: `Cadastro · ${c.brand}`,
-  description: `Formulário de aplicação para palestras, mentorias e eventos com ${c.brand}.`,
+  description: `Formulário de candidatura para palestras, mentorias e eventos com ${c.brand}.`,
   alternates: { canonical: "/cadastro" },
   openGraph: { url: "/cadastro" },
 };

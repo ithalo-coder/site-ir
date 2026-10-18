@@ -1,11 +1,11 @@
 # site-ir
 
-Site institucional em Next.js (App Router) com formulário de aplicação gravando no Supabase.
+Site institucional em Next.js (App Router) com formulário de candidatura gravando no Supabase.
 
 ## Estrutura
 
 - `app/page.tsx`: Home
-- `app/cadastro/`: página e formulário de aplicação (`/cadastro`). Aceita `?interesse=palestra`, `mentoria` ou `cafe` para abrir com a opção marcada
+- `app/cadastro/`: página e formulário de candidatura (`/cadastro`). Aceita `?interesse=palestra`, `mentoria` ou `cafe` para abrir com a opção marcada
 - `app/links/`: página de links para a bio das redes sociais (`/links`)
 - `app/api/applications/route.ts`: rota que valida e grava no Supabase
 - `lib/content.ts`: **todos os textos do site**. Troque os `[PLACEHOLDERS]` aqui

@@ -22,7 +22,7 @@ export default function SiteHeader({ minimal = false }: { minimal?: boolean }) {
               ))}
             </nav>
             <Link href="/cadastro" className="btn btn-primary btn-sm">
-              Aplicar agora
+              Quero participar
             </Link>
           </>
         )}
