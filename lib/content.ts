@@ -180,17 +180,22 @@ export const content = {
       steps: [
         { title: "Aplicação e conversa inicial", text: "Você preenche a aplicação e conversamos para entender o seu momento e o seu objetivo." },
         { title: "Plano personalizado", text: "Definimos juntos metas e primeiros hábitos, de acordo com a sua realidade." },
-        { title: "Acompanhamento", text: "[Descreva o formato: encontros, frequência, canal de apoio, materiais.]" },
+        {
+          title: "Encontros e acompanhamento",
+          text: "No primeiro mês, encontros semanais de 1h30. Nos meses seguintes, encontros quinzenais online, e um grupo de acompanhamento com o mentor durante toda a mentoria.",
+        },
       ],
     },
     format: {
       eyebrow: "FORMATO E INVESTIMENTO",
       title: "Detalhes da mentoria",
       items: [
-        { label: "Duração", value: "[X meses]" },
-        { label: "Encontros", value: "[X por mês, online ou presencial]" },
-        { label: "Suporte entre encontros", value: "[WhatsApp ou outro canal]" },
-        { label: "Investimento", value: "[R$ X ou formas de pagamento]" },
+        { label: "Duração", value: "3 meses" },
+        { label: "Mês 1", value: "Encontros semanais de 1h30, presenciais ou online" },
+        { label: "Meses 2 e 3", value: "Encontros quinzenais de 1h30, online pelo Google Meet" },
+        { label: "Acompanhamento", value: "Grupo com o mentor durante toda a mentoria" },
+        { label: "Bônus", value: "Aulas e encontros extras, não programados, ao longo da mentoria" },
+        { label: "Investimento", value: "R$ 4.490, em até 6 vezes" },
       ],
     },
     outcome: {
