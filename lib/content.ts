@@ -29,7 +29,7 @@ export const content = {
     photoLabel: "[FOTO SECUNDÁRIA · 1:1]",
     paragraphs: [
       "Sou de Goiânia e perdi meu pai aos 4 anos de idade. Fui criado pelos meus avós e, na infância, usava roupas dos meus primos. Foi uma fase difícil, mas, graças a Deus, nunca faltou nada. Isso me motivou a trabalhar e a entender que ninguém ia me dar nada.",
-      "Comecei a trabalhar aos 14 anos, passeando com o cachorro dos vizinhos por 30 reais por semana. Aos 15, já tinha três fontes de renda: o programa de jovem aprendiz do Pró-Cerrado, o passeio com os cães e a venda de celulares de dois chips, chips e pen drives. Fui juntando dinheiro, comecei a comprar lotes e paguei minha faculdade de Direito. Enquanto meus amigos curtiam a vida, eu abria mão dos prazeres imediatos. Cheguei a ganhar o apelido de Tio Patinhas.",
+      "Comecei a trabalhar aos 14 anos, passeando com o cachorro dos vizinhos por R$ 30 por semana. Aos 15, já tinha três fontes de renda: o programa de jovem aprendiz do Pró-Cerrado, o passeio com os cães e a venda de celulares com dois chips, de chips avulsos e de pen drives. Fui juntando dinheiro, comecei a comprar lotes e paguei minha faculdade de Direito. Enquanto meus amigos curtiam a vida, eu abria mão dos prazeres imediatos. Cheguei a ganhar o apelido de Tio Patinhas.",
       "Ao longo dos anos, atuei como advogado, servidor público na polícia (de 2014 a 2022) e empresário: bar e restaurante, loja de biquínis, construtora e imobiliária, palestras e mentorias. Hoje invisto em energia solar, galpões para aluguel e venda e outdoors. Minha missão é plantar coisas boas nas pessoas e fazê-las acreditar que podem mudar a própria vida.",
     ],
     credentials: [
@@ -46,14 +46,17 @@ export const content = {
       {
         title: "Palestras",
         text: "Mentalidade visionária, disciplina, constância e como começar com pouco, poupando e investindo. Para empresas e eventos.",
+        cta: "Contratar uma palestra →",
       },
       {
         title: "Mentorias",
         text: "Acompanhamento sobre disciplina, controle de gastos, gestão do tempo, investimento e criação de várias fontes de renda.",
+        cta: "Quero a mentoria →",
       },
       {
         title: "Café de Negócios para Empresários",
         text: "Evento exclusivo, aberto apenas a empresários convidados, para trocar experiências e fazer conexões.",
+        cta: "Pedir convite →",
       },
     ],
   },
@@ -96,6 +99,8 @@ export const content = {
   },
   footer: {
     tagline: "Mentalidade visionária, disciplina e investimento.",
+    disclaimer:
+      "Conteúdo de caráter educacional. Não constitui recomendação de investimento nem promessa de resultado financeiro; os resultados variam de pessoa para pessoa.",
     social: [
       { label: "Instagram", href: "https://www.instagram.com/ithaloribeiro.oficial/" },
       { label: "YouTube", href: "https://www.youtube.com/@ithalomarcosmarcalribeiro" },

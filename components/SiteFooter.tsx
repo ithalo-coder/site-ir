@@ -27,6 +27,7 @@ export default function SiteFooter() {
             ))}
           </div>
         </div>
+        <p className="footer-disclaimer">{content.footer.disclaimer}</p>
         <div className="footer-bottom">
           <div>©{new Date().getFullYear()} {content.brand}. Todos os direitos reservados.</div>
           <Link href="/privacidade">Política de Privacidade</Link>

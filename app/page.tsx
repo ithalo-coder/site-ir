@@ -120,7 +120,7 @@ export default function Home() {
                   <h3>{item.title}</h3>
                   <p>{item.text}</p>
                   <Link href={`/cadastro?interesse=${["palestra", "mentoria", "cafe"][i] ?? ""}`} className="card-link">
-                    Saber mais →
+                    {item.cta}
                   </Link>
                 </div>
               ))}

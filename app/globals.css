@@ -498,6 +498,13 @@ h3 {
   font-size: 22px;
   color: #fff;
 }
+.footer-disclaimer {
+  margin: 0;
+  max-width: 760px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8fa6b4;
+}
 .footer-bottom {
   border-top: 1px solid #1d3341;
   padding-top: 24px;
